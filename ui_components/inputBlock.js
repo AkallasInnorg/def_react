@@ -4,7 +4,7 @@ import { Input, Button } from "@rneui/themed";
 import { LinearGradient } from "expo-linear-gradient";
 import { StyleSheet } from "react-native";
 
-export default function InputBlock() {
+export default function InputBlock({ navigation }) {
     return (<><GestureHandlerRootView
         style={{
             display: 'flex',
@@ -26,7 +26,7 @@ export default function InputBlock() {
         }}
         buttonStyle={{ borderRadius: 5 }}
         style={styles.button}
-        onPress={() => { }}>Conferma</Button></>)
+        onPress={() => navigation.navigate('DetailScreen')}>Conferma</Button></>)
 }
 
 const styles = StyleSheet.create({

@@ -6,7 +6,7 @@ import MyHeader from '../ui_components/header';
 import InputBlock from '../ui_components/inputBlock';
 
 
-export default function Home (){
+export default function Home ({ navigation }){
     return (
         <View style={styles.container}> 
         <LinearGradient
@@ -14,7 +14,7 @@ export default function Home (){
               colors={['rgba(0,0,0,0.8)', 'transparent']}
               style={styles.background}>
             <MyHeader/>
-            <InputBlock/>
+            <InputBlock navigation={navigation}/>
         </LinearGradient>
         </View>    
       );
