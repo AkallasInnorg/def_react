@@ -10,6 +10,7 @@ export default function DetailScreen({ navigation }) {
                 buttonStyle={{ borderRadius: 5 }}
                 style={styles.button}
                 onPress={() => navigation.navigate('Home')}>Home</Button>
+            
         </View>
     )
 }
